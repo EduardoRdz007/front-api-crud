@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 export default function Settings() {
   const [file, setFile] = useState(null);
@@ -10,6 +11,7 @@ export default function Settings() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
+  const { t} = useTranslation();
 
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:5000/api/images/"
@@ -45,11 +47,11 @@ export default function Settings() {
     <div className="settings">
       <div className="settingsWrapper">
         <div className="settingsTitle">
-          <span className="settingsUpdateTitle">Update Your Account</span>
-          <span className="settingsDeleteTitle">Delete Account</span>
+          <span className="settingsUpdateTitle">{t("UPDATE_COUN")}</span>
+          <span className="settingsDeleteTitle">{t("DELATE_COUN")}</span>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
-          <label>Profile Picture</label>
+          <label>{t('PROFILE')}</label>
           <div className="settingsPP">
             <img
               src={file ? URL.createObjectURL(file) : PF+user.profilePic}
@@ -65,25 +67,25 @@ export default function Settings() {
               onChange={(e) => setFile(e.target.files[0])}
             />
           </div>
-          <label>Username</label>
+          <label>{t('USER')}</label>
           <input
             type="text"
             placeholder={user.username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <label>Email</label>
+          <label>{t('EMAIL')}</label>
           <input
             type="email"
             placeholder={user.email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label>Password</label>
+          <label>{t('PASS')}</label>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <button className="settingsSubmit" type="submit">
-            Update
+          {t("DELATE_COUN")}
           </button>
           {success && (
             <span

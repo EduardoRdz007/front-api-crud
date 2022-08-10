@@ -8,5 +8,15 @@
     "REG":"REGISTER",
     "USER": "Username",
     "EMAIL": "Email",
-    "PASS": "Password"
+    "PASS": "Password",
+    "PERSON": "Author",
+    "Upd": "Update",
+    "Cat": "Categories",
+    "Follow": "FOLLOW US",
+    "title": "Title",
+    "UPDATE_COUN": "Update Your Account",
+    "DELATE_COUN": "Delete Account",
+    "PROFILE":"Profile Picture",
+    "PUBLIC":"Publish",
+    "TELL":"Tell you history..."
   }

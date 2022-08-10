@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Context } from "../../context/Context";
 import "./singlePost.css";
 
@@ -13,6 +14,7 @@ export default function SinglePost() {
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const { t } = useTranslation();
   const [updateMode, setUpdateMode] = useState(false);
 
   useEffect(() => {
@@ -78,7 +80,7 @@ export default function SinglePost() {
         )}
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
-            Author:
+            {t('PERSON')}
             <Link to={`/?user=${post.username}`} className="link">
               <b> {post.username}</b>
             </Link>
@@ -98,7 +100,7 @@ export default function SinglePost() {
         )}
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
-            Update
+            {t('Upd')}
           </button>
         )}
       </div>

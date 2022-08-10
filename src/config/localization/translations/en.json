@@ -1,6 +1,6 @@
 {
     "Ini": "INICIO", 
-    "Abou": "SOBRE",
+    "Abou": "SOBRE NOSOTROS",
     "Con": "CONTACTO",
     "Esc": "ESCRIBIR",
     "Sesion": "CERRAR SESION",
@@ -8,6 +8,17 @@
     "REG": "REGISTRAR",
     "USER": "Nombre De Usuario",
     "EMAIL": "Correo",
-    "PASS": "Contraseña"
+    "PASS": "Contraseña",
+    "PERSON": "Autor",
+    "Upd": "Actualizar",
+    "Cat": "Categorias",
+    "Follow": "SIGUENOS EN:",
+    "title": "Titulo",
+    "UPDATE_COUN": "Actualiza tu cuenta",
+    "DELATE_COUN": "Elimina tu cuenta",
+    "PROFILE":"Foto de perfil",
+    "PUBLIC":"Publicar",
+    "TELL":"Cuenta tu historia..."
   }
+  
   
