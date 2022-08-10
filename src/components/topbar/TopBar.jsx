@@ -2,16 +2,38 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
+import { useTranslation } from "react-i18next";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:5000/images/"
+  const {i18n, t} = useTranslation();
+    function changeLaguage(language){
+        i18n.changeLanguage(language);
+      }
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
   return (
+    
     <div className="top">
+      <p
+         className={`App-link ${
+           i18n.language === "es" ? "selected" : "unselected"
+         }`}
+         onClick={() => changeLaguage("es")}
+       >
+        <button class="btnMx">🇺🇸</button> 
+       </p>
+       <p
+         className={`App-link ${
+           i18n.language === "en" ? "selected" : "unselected"
+         }`}
+         onClick={() => changeLaguage("en")}
+       >
+         <button class="btnUs">🇲🇽</button>
+       </p>
       <div className="topLeft">
         <i className="topIcon fab fa-facebook-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
@@ -22,26 +44,26 @@ export default function TopBar() {
         <ul className="topList">
           <li className="topListItem">
             <Link className="link" to="/">
-              HOME
+              {t('Ini')}
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/">
-              ABOUT
+              {t('Abou')}
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/">
-              CONTACT
+              {t('Con')}
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/write">
-              WRITE
+              {t('Esc')}
             </Link>
           </li>
           <li className="topListItem" onClick={handleLogout}>
-            {user && "LOGOUT"}
+            {user && t("Sesion")}
           </li>
         </ul>
       </div>
@@ -54,18 +76,19 @@ export default function TopBar() {
           <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
-                LOGIN
+              {t('IS')}
               </Link>
             </li>
             <li className="topListItem">
               <Link className="link" to="/register">
-                REGISTER
+              {t('REG')}
               </Link>
             </li>
           </ul>
         )}
         <i className="topSearchIcon fas fa-search"></i>
       </div>
+      
     </div>
   );
 }

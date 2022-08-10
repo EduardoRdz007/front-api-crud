@@ -1,0 +1,12 @@
+{
+    "Ini": "HOME", 
+    "Abou": "ABOUT",
+    "Con": "CONTACT",
+    "Esc": "WRITE",
+    "Sesion": "LOGOUT",
+    "IS": "LOGIN",
+    "REG":"REGISTER",
+    "USER": "Username",
+    "EMAIL": "Email",
+    "PASS": "Password"
+  }

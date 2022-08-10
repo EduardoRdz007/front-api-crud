@@ -3,12 +3,13 @@ import { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./login.css";
+import { useTranslation } from "react-i18next";
 
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
   const { dispatch, isFetching } = useContext(Context);
-
+  const { t } = useTranslation();
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
@@ -25,29 +26,29 @@ export default function Login() {
 
   return (
     <div className="login">
-      <span className="loginTitle">Login</span>
+      <span className="loginTitle">{t('IS')}</span>
       <form className="loginForm" onSubmit={handleSubmit}>
-        <label>Username</label>
+        <label>{t('USER')}</label>
         <input
           type="text"
           className="loginInput"
-          placeholder="Enter your username..."
+          placeholder=""
           ref={userRef}
         />
-        <label>Password</label>
+        <label>{t('PASS')}</label>
         <input
           type="password"
           className="loginInput"
-          placeholder="Enter your password..."
+          placeholder=""
           ref={passwordRef}
         />
         <button className="loginButton" type="submit" disabled={isFetching}>
-          Login
+        {t('IS')}
         </button>
       </form>
       <button className="loginRegisterButton">
         <Link className="link" to="/register">
-          Register
+        {t('REG')}
         </Link>
       </button>
     </div>

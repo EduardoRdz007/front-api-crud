@@ -2,12 +2,14 @@ import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./register.css";
+import { useTranslation } from "react-i18next";
 
 export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+  const { t} = useTranslation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,36 +27,36 @@ export default function Register() {
   };
   return (
     <div className="register">
-      <span className="registerTitle">Register</span>
+      <span className="registerTitle">{t('REG')}</span>
       <form className="registerForm" onSubmit={handleSubmit}>
-        <label>Username</label>
+        <label>{t('USER')}</label>
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your username..."
+          placeholder=""
           onChange={(e) => setUsername(e.target.value)}
         />
-        <label>Email</label>
+        <label>{t('EMAIL')}</label>
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your email..."
+          placeholder=""
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Password</label>
+        <label>{t('PASS')}</label>
         <input
           type="password"
           className="registerInput"
-          placeholder="Enter your password..."
+          placeholder=""
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="registerButton" type="submit">
-          Register
+        {t('REG')}
         </button>
       </form>
       <button className="registerLoginButton">
         <Link className="link" to="/login">
-          Login
+        {t('IS')}
         </Link>
       </button>
       {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
