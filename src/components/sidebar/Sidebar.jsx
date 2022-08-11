@@ -20,8 +20,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">{t("Abou")}</span>
         <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
-          alt=""
+          src="https://c.tenor.com/I63tFFidY2oAAAAC/doctor-strange-doctor-strange-in-the-multiverse-of-madness.gif"          alt=""
         />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
