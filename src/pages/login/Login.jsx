@@ -28,18 +28,19 @@ export default function Login() {
     <div className="login">
       <span className="loginTitle">{t('IS')}</span>
       <form className="loginForm" onSubmit={handleSubmit}>
-        <label>{t('USER')}</label>
+      <label>{t('IS')}</label>
+        <br />
         <input
           type="text"
           className="loginInput"
-          placeholder=""
+          placeholder="Usuario"
           ref={userRef}
         />
-        <label>{t('PASS')}</label>
+        
         <input
           type="password"
           className="loginInput"
-          placeholder=""
+          placeholder="Contraseña"
           ref={passwordRef}
         />
         <button className="loginButton" type="submit" disabled={isFetching}>

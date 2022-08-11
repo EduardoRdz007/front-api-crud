@@ -27,7 +27,6 @@ export default function Sidebar() {
         <br />
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">Mas Informacion:</span>
         <ul className="sidebarList">
         <li className="topListItem">
             <Link className="link" to="/">
