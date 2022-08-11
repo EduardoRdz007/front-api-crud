@@ -37,7 +37,7 @@ export default function Sidebar() {
           ))}
         </ul>
       </div>
-      <div className="sidebarItem">
+      {/*--<div className="sidebarItem">
         <span className="sidebarTitle">{t("Follow")}</span>
         <div className="sidebarSocial">
           <i className="sidebarIcon fab fa-facebook-square"></i>
@@ -45,7 +45,7 @@ export default function Sidebar() {
           <i className="sidebarIcon fab fa-pinterest-square"></i>
           <i className="sidebarIcon fab fa-instagram-square"></i>
         </div>
-      </div>
+          </div>*/}
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function TopBar() {
          }`}
          onClick={() => changeLaguage("es")}
        >
-        <button class="btnMx">🇺🇸</button> 
+        <button class="btnMx"><img className="languaje" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" /></button> 
        </p>
        <p
          className={`App-link ${
@@ -32,14 +32,14 @@ export default function TopBar() {
          }`}
          onClick={() => changeLaguage("en")}
        >
-         <button class="btnUs">🇲🇽</button>
+         <button class="btnUs"><img className="languaje" src="http://www.tamaulipas.gob.mx/fomentocivico/wp-content/uploads/sites/20/2017/04/bandera-mexico-portavox-e1492461746506.jpg"/></button>
        </p>
-      <div className="topLeft">
+      {/*<div className="topLeft">
         <i className="topIcon fab fa-facebook-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-pinterest-square"></i>
         <i className="topIcon fab fa-instagram-square"></i>
-      </div>
+        </div>*/}
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
@@ -47,21 +47,21 @@ export default function TopBar() {
               {t('Ini')}
             </Link>
           </li>
-          <li className="topListItem">
+          {/*<li className="topListItem">
             <Link className="link" to="/">
               {t('Abou')}
             </Link>
-          </li>
-          <li className="topListItem">
+      </li>*/}
+          {/*<li className="topListItem">
             <Link className="link" to="/">
               {t('Con')}
             </Link>
-          </li>
-          <li className="topListItem">
+      </li>*/}
+          {/*<li className="topListItem">
             <Link className="link" to="/write">
               {t('Esc')}
             </Link>
-          </li>
+      </li>*/}
           <li className="topListItem" onClick={handleLogout}>
             {user && t("Sesion")}
           </li>
@@ -70,7 +70,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            {/*<img className="topImg" src={PF+user.profilePic} alt="" />*/}
           </Link>
         ) : (
           <ul className="topList">
@@ -86,7 +86,7 @@ export default function TopBar() {
             </li>
           </ul>
         )}
-        <i className="topSearchIcon fas fa-search"></i>
+        {/*<i className="topSearchIcon fas fa-search"></i>*/}
       </div>
       
     </div>
