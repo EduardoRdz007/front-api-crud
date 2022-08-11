@@ -28,13 +28,13 @@ export default function Sidebar() {
         </p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">{t("Cat")}</span>
+        <span className="sidebarTitle">Mas Informacion:</span>
         <ul className="sidebarList">
-          {cats.map((c) => (
-            <Link to={`/?cat=${c.name}`} className="link">
-            <li className="sidebarListItem">{c.name}</li>
+        <li className="topListItem">
+            <Link className="link" to="/">
+              {t('Abou')}
             </Link>
-          ))}
+            </li>
         </ul>
       </div>
       {/*--<div className="sidebarItem">
