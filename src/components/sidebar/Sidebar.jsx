@@ -22,10 +22,9 @@ export default function Sidebar() {
         <img
           src="https://c.tenor.com/I63tFFidY2oAAAAC/doctor-strange-doctor-strange-in-the-multiverse-of-madness.gif"          alt=""
         />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
-        </p>
+        <br />
+        <span className="sidebarTitle">Marvel Comics nació en 1939 como una editorial de cómics de superhéroes fundada por Martin Goodman, que entonces tenía 31 años. En un primer momento, se trataba de un proyecto secundario del emprendedor, que ya tenía otra editorial especializada en novelas ambientadas en el oeste americano.</span>
+        <br />
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">Mas Informacion:</span>
