@@ -1,23 +1,22 @@
-.posts{
+.posts {
     flex: 9;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     background-color: black;
     border-style: solid;
-    border-color:  red;
+    border-color: red;
     color: white;
     flex-direction: row;
 }
 
-.imgposts1{
+.imgposts1 {
     width: 31%;
     height: 45%;
     font-size: 25px;
 }
 
-.imgposts2{
+.imgposts2 {
     width: 100%;
     height: 95%;
-
 }
