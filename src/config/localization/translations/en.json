@@ -1,5 +1,5 @@
 {
-    "Ini": "INICIO", 
+    "Ini": "INICIO",
     "Abou": "SOBRE NOSOTROS",
     "Con": "CONTACTO",
     "Esc": "ESCRIBIR",
@@ -13,12 +13,10 @@
     "Upd": "Actualizar",
     "Cat": "Categorias",
     "Follow": "SIGUENOS EN:",
-    "title": "Titulo",
+    "title": "¿Que piensas?",
     "UPDATE_COUN": "Actualiza tu cuenta",
     "DELATE_COUN": "Elimina tu cuenta",
-    "PROFILE":"Foto de perfil",
-    "PUBLIC":"Publicar",
-    "TELL":"Cuenta tu historia..."
-  }
-  
-  
+    "PROFILE": "Foto de perfil",
+    "PUBLIC": "Publicar",
+    "TELL": "Cuentanos tu opinion"
+}

@@ -51,7 +51,7 @@ export default function Write() {
           />
           <input
             type="text"
-            placeholder={t("¿Qué piensas?")}
+            placeholder={t("title")}
             className="writeInput"
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
@@ -59,7 +59,7 @@ export default function Write() {
         </div>
         <div className="writeFormGroup">
           <textarea
-            placeholder={t("Cuentanos tu opinión")}
+            placeholder={t("TELL")}
             type="text"
             className="writeInput writeText"
             onChange={e=>setDesc(e.target.value)}

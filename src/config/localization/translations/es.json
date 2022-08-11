@@ -1,11 +1,11 @@
 {
-    "Ini": "HOME", 
+    "Ini": "HOME",
     "Abou": "ABOUT",
     "Con": "CONTACT",
     "Esc": "WRITE",
     "Sesion": "LOGOUT",
     "IS": "LOGIN",
-    "REG":"REGISTER",
+    "REG": "REGISTER",
     "USER": "Username",
     "EMAIL": "Email",
     "PASS": "Password",
@@ -13,10 +13,10 @@
     "Upd": "Update",
     "Cat": "Categories",
     "Follow": "FOLLOW US",
-    "title": "Title",
+    "title": "What do you think?",
     "UPDATE_COUN": "Update Your Account",
     "DELATE_COUN": "Delete Account",
-    "PROFILE":"Profile Picture",
-    "PUBLIC":"Publish",
-    "TELL":"Tell you history..."
-  }
+    "PROFILE": "Profile Picture",
+    "PUBLIC": "Publish",
+    "TELL": "Tell your opinion"
+}
