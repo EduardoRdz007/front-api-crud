@@ -26,7 +26,6 @@ export default function Login() {
 
   return (
     <div className="login">
-      <span className="loginTitle">{t('IS')}</span>
       <form className="loginForm" onSubmit={handleSubmit}>
       <label>{t('IS')}</label>
         <br />
