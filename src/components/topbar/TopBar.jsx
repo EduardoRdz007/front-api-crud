@@ -57,11 +57,11 @@ export default function TopBar() {
               {t('Con')}
             </Link>
       </li>*/}
-          {/*<li className="topListItem">
+          <li className="topListItem">
             <Link className="link" to="/write">
               {t('Esc')}
             </Link>
-      </li>*/}
+      </li>
           <li className="topListItem" onClick={handleLogout}>
             {user && t("Sesion")}
           </li>
@@ -70,7 +70,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            {/*<img className="topImg" src={PF+user.profilePic} alt="" />*/}
+            <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">
